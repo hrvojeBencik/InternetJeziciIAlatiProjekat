@@ -26,7 +26,7 @@
   color: rgb(0, 123, 224);
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
   #navBarList {
     right: 0;
     bottom: 0;
@@ -41,5 +41,10 @@
 
   #navBarList i {
     transform: scale(0.5);
+    color: rgb(0, 123, 224);
+  }
+
+  #navBarList i:active {
+    transform: scale(0.7);
   }
 }
