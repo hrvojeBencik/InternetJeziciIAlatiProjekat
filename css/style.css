@@ -1,0 +1,45 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+#navBarList {
+  position: fixed;
+  right: 15px;
+  list-style-type: none;
+  width: fit-content;
+  margin-top: 20px;
+  text-align: center;
+}
+
+#navBarList li {
+  margin: 50px 0;
+}
+
+#navBarList a {
+  text-decoration: none;
+  color: rgba(0, 123, 224, 0.5);
+}
+
+#navBarList i:hover {
+  color: rgb(0, 123, 224);
+}
+
+@media only screen and (max-width: 600px) {
+  #navBarList {
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 221, 158, 0.5);
+    width: 100%;
+  }
+
+  #navBarList li {
+    display: inline;
+    margin: 0 5%;
+  }
+
+  #navBarList i {
+    transform: scale(0.5);
+  }
+}
