@@ -1,85 +1,47 @@
-* {
-  padding: 0;
+body {
   margin: 0;
-  font-family: "Roboto", sans-serif;
+  padding: 0;
+  font-family: "Raleway", sans-serif;
 }
 
-#navBarList {
+/* NavBar */
+nav {
   position: fixed;
-  right: 30px;
-  bottom: 10px;
-  list-style-type: none;
-  width: fit-content;
-  margin-top: 17px;
-  text-align: center;
+  top: 0px;
+  width: 100%;
+  padding: 5px;
+  background-color: green;
+  z-index: 5;
 }
 
-#navBarList li {
-  margin: 50px 0;
+#navLogo {
+  max-width: 150px;
+  display: inline;
+  margin-left: 100px;
 }
 
-#navBarList a {
+#navList {
+  float: right;
+  list-style: none;
+  margin: 11px 100px 0 0;
+}
+
+#navItem {
+  float: left;
+  padding: 10px 30px;
+}
+
+#navItem a {
   text-decoration: none;
-  color: rgba(0, 123, 224, 0.5);
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-weight: bold;
+  color: black;
 }
 
-#navBarList i:hover {
-  color: rgb(0, 123, 224);
+#navItem a:hover {
+  border-bottom: 1px solid black;
+  font-size: 102%;
 }
-/*NavBar styling ends here*/
+/*NavBar ends here, main section begins*/
 
-#gallery {
-  width: 83%;
-  margin: 0 auto;
-  background-color: rgba(255, 221, 158, 0.1);
-}
-
-#gallery h1 {
-  margin: 20px;
-  text-align: center;
-  font-size: 40px;
-}
-
-.img {
-  max-width: 45%;
-  margin: 12px 2.4%;
-}
-
-.img:hover {
-  transform: scale(1.2);
-  border-radius: 10px;
-}
-
-@media only screen and (max-width: 1300px) {
-  .img {
-    max-width: 95%;
-  }
-
-  .img:hover {
-    transform: none;
-    border-radius: 0px;
-  }
-}
-
-@media only screen and (max-width: 768px) {
-  #navBarList {
-    right: 0;
-    bottom: 0;
-    background-color: rgba(255, 221, 158, 0.5);
-    width: 100%;
-  }
-
-  #navBarList li {
-    display: inline;
-    margin: 0 5%;
-  }
-
-  #navBarList i {
-    transform: scale(0.5);
-    color: rgb(0, 123, 224);
-  }
-
-  #navBarList i:active {
-    transform: scale(0.7);
-  }
-}
