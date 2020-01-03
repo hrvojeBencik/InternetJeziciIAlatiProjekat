@@ -122,6 +122,13 @@ input[type="reset"]:hover {
     margin-bottom: 100px;
   }
 
+  input[type="text"],
+  input[type="email"],
+  select,
+  textarea {
+    width: 95%;
+  }
+
   .mobileNav {
     z-index: 100;
     display: block;
@@ -135,13 +142,13 @@ input[type="reset"]:hover {
 
   .mobileNav a {
     display: inline;
-    padding: 0 25px;
+    margin-right: 20px;
     text-decoration: none;
     color: rgb(35, 31, 32);
   }
 
   .gallery {
-    margin: 75px 0 0 0;
+    margin: 75px 0 50px 0;
   }
 
   .gallery img {
