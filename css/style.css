@@ -10,8 +10,11 @@ nav {
   top: 0px;
   width: 100%;
   padding: 5px;
-  background-color: green;
-  z-index: 5;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+.mobileNav {
+  display: none;
 }
 
 #navLogo {
@@ -45,3 +48,104 @@ nav {
 }
 /*NavBar ends here, main section begins*/
 
+.gallery {
+  margin: 75px 100px 0 100px;
+}
+
+.gallery img {
+  width: 49%;
+}
+
+form {
+  position: relative;
+  display: block;
+  top: 100px;
+  width: 50%;
+  margin: 0 auto;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+  width: 50%;
+  padding: 10px 10px;
+  margin-bottom: 10px;
+  border: 2px solid rgb(35, 31, 32);
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+}
+
+input[type="submit"],
+input[type="reset"] {
+  background-color: rgb(35, 31, 32);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-right: 10px;
+  border: 2px solid rgb(35, 31, 32);
+  font-size: 18px;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+select {
+  cursor: pointer;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+  background-color: rgba(35, 31, 32, 0.8);
+}
+
+@media screen and (max-width: 768px) {
+  nav {
+    z-index: 99;
+  }
+  #navLogo {
+    display: block;
+    margin: 0 auto;
+  }
+
+  nav ul {
+    display: none;
+  }
+
+  form {
+    width: 90%;
+    margin-bottom: 100px;
+  }
+
+  .mobileNav {
+    z-index: 100;
+    display: block;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.4);
+  }
+
+  .mobileNav a {
+    display: inline;
+    padding: 0 25px;
+    text-decoration: none;
+    color: rgb(35, 31, 32);
+  }
+
+  .gallery {
+    margin: 75px 0 0 0;
+  }
+
+  .gallery img {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
