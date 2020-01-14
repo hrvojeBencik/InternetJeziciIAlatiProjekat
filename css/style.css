@@ -23,6 +23,29 @@ nav {
   margin-left: 100px;
 }
 
+#navLogo:hover {
+  cursor: pointer;
+  animation: logoRotacija 5s infinite;
+}
+
+@keyframes logoRotacija {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(45deg);
+  }
+  50% {
+    transform: rotate(-90deg);
+  }
+  75% {
+    transform: rotate(-180deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
 #navList {
   float: right;
   list-style: none;
@@ -48,8 +71,50 @@ nav {
 }
 /*NavBar ends here, main section begins*/
 
+.aboutBcg {
+  width: 90%;
+  height: 800px;
+  margin-top: 75px;
+  background-image: url("../images/img4.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  position: fixed;
+  left: 96px;
+  opacity: 0.6;
+}
+
+.aboutText {
+  padding: 10px;
+  top: 130px;
+  width: 70%;
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.aboutText h1 {
+  font-weight: bold;
+  font-size: 40px;
+  text-decoration: underline;
+  text-shadow: 4px 4px #00000065;
+  animation: h1Animacija 1s 1;
+}
+
+@keyframes h1Animacija {
+  from {
+    margin-top: -30px;
+  }
+}
+
+.aboutText p {
+  font-weight: bold;
+  font-size: 18px;
+  text-align: justify;
+}
+
 .gallery {
-  margin: 75px 100px 0 100px;
+  margin: 75px 100px 0px 100px;
 }
 
 .gallery img {
@@ -104,7 +169,22 @@ input[type="reset"]:hover {
   background-color: rgba(35, 31, 32, 0.8);
 }
 
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer p {
+  font-size: 12px;
+  text-align: center;
+}
+
 @media screen and (max-width: 768px) {
+  .footer {
+    display: none;
+  }
+
   nav {
     z-index: 99;
   }
@@ -145,6 +225,21 @@ input[type="reset"]:hover {
     margin-right: 20px;
     text-decoration: none;
     color: rgb(35, 31, 32);
+  }
+
+  .aboutBcg {
+    display: none;
+  }
+  .aboutText {
+    text-align: center;
+    width: 95%;
+    top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .aboutText h1 {
+    text-decoration: none;
+    text-shadow: none;
   }
 
   .gallery {
