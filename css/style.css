@@ -356,6 +356,10 @@ input[type="reset"]:hover {
     display: none;
   }
 
+  #navCar {
+    display: none;
+  }
+
   form {
     width: 90%;
     margin-bottom: 100px;
