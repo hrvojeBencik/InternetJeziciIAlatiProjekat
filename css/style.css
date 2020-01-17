@@ -5,6 +5,7 @@ body {
 }
 
 nav {
+  z-index: 150;
   position: fixed;
   top: 0px;
   width: 100%;
@@ -340,10 +341,6 @@ input[type="reset"]:hover {
 }
 
 @media screen and (max-width: 768px) {
-  .footer {
-    display: none;
-  }
-
   nav {
     z-index: 99;
   }
@@ -358,18 +355,6 @@ input[type="reset"]:hover {
 
   #navCar {
     display: none;
-  }
-
-  form {
-    width: 90%;
-    margin-bottom: 100px;
-  }
-
-  input[type="text"],
-  input[type="email"],
-  select,
-  textarea {
-    width: 95%;
   }
 
   .mobileNav {
@@ -477,5 +462,20 @@ input[type="reset"]:hover {
     top: 0px;
     text-align: justify;
     margin-left: 0;
+  }
+
+  form {
+    width: 90%;
+    margin-bottom: 100px;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  select,
+  textarea {
+    width: 95%;
+  }
+  .footer {
+    display: none;
   }
 }
